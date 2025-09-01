@@ -1,0 +1,29 @@
+Time resolution is 1 ps
+Correct execute
+PC = 140, aluRes = 00, zero = 01, writeData = 20
+Correct execute
+PC = 140, aluRes = 60, zero = 00, writeData = 20
+Correct execute
+PC = 140, aluRes = 60, zero = 00, writeData = 20
+Correct execute
+PC = 140, aluRes = 20, zero = 00, writeData = 20
+Correct execute
+PC = 140, aluRes = 20, zero = 00, writeData = 20
+unknown opcode
+Correct execute
+PC = 140, aluRes = 00, zero = 01, writeData = 20
+Correct execute
+PC = 140, aluRes = 00, zero = 01, writeData = 20
+Correct execute
+PC = 140, aluRes = 50, zero = 00, writeData = 20
+Correct execute
+PC = 140, aluRes = 50, zero = 00, writeData = 20
+Correct execute
+PC = 140, aluRes = 30, zero = 00, writeData = 20
+Correct execute
+PC = 140, aluRes = 10, zero = 00, writeData = 20
+unknown opcode
+Correct execute
+PC = 140, aluRes = 00, zero = 01, writeData = 20
+FINISH TEST
+$finish called at time : 12 ns : File "/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv" Line 110
