@@ -27,7 +27,7 @@ module flopr_F (
 endmodule
 
 // MODULO SUMADOR
-module adder (
+module adder_F (
     input logic [63:0] a, b,
     output logic [63:0] y
     );
@@ -45,13 +45,13 @@ module fetch(
     logic [63:0] mux_res, flopr_res, adder_res;
 
     // SELECCION DE PC+4 O BRANCH
-    mux2 multiplexor (.d0(adder_res), .d1(PCBranch_F), .s(PCSrc_F), .y(mux_res));
+    mux2_F multiplexor (.d0(adder_res), .d1(PCBranch_F), .s(PCSrc_F), .y(mux_res));
 
     // SETEO DEL LUGAR DE INSTRUCCION EN LA MEMORIA CON FLOPR
-    flopr_2 flopr (.clk(clk), .reset(reset), .d(mux_res), .q(flopr_res));
+    flopr_F flopr (.clk(clk), .reset(reset), .d(mux_res), .q(flopr_res));
 
     // PC+4 CON EL SUMADOR
-    adder sumador (.a(flopr_res), .b(64'h4), .y(adder_res));
+    adder_F sumador (.a(flopr_res), .b(64'h4), .y(adder_res));
 
     // DIRECCIONAR LA MEMORIA A LA INSTRUCCION
     assign imem_addr_F = flopr_res;

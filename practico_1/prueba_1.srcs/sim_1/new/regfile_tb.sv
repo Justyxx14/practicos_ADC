@@ -77,7 +77,7 @@ module regfile_tb;
             if(rd1 != 0 || rd2 != 0)
                 $error("X31 wrote: rd1=%2h and rd2=%2h", rd1, rd2);
             else
-                $display("CORRECT: X31 = %2h", rd1);
+                $display("CORRECT: expected: wd3 = %2h, X31 = %2h", wd3, rd1);
         end
 
         $display("TESTBENCH FINISHED");

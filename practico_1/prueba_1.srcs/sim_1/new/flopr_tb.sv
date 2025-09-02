@@ -19,14 +19,15 @@ module flopr_tb;
         for (int i = 0; i < 10; i++) begin
             d = 64'h1 + i; // change number
             @(posedge clk);
-            if (i == 3) reset = 0;
+            if (i == 4) reset = 0;
 
             if (i < 5) begin
-                if (q !== 64'h0) 
+                if (q != 64'h0) 
                     $error("Cycle %0d: q should be 0, but is %h", i, q);
-            end else begin
-                if (q !== 64'h1 + (i-1)) 
-                    $error("Cycle %0d: q should be %h, but is %h", i, 64'h1 + (i-1), q);
+            end 
+            else begin
+                if (q != 64'h1 + i) 
+                    $error("Cycle %0d: q should be %h, but is %h", i+1, 64'h1 + i, q);
             end
         end
         $display("Test N=64 done");
@@ -46,11 +47,11 @@ module flopr_tb;
             if (i == 4) reset = 0;
 
             if (i < 5) begin
-                if (q32 !== 32'h0) 
-                    $error("Cycle %0d: q should be 0, but is %h", i, q32);
+                if (q32 != 32'h0) 
+                    $error("Cycle %0d: q should be 0, but is %h", i+1, q32);
             end else begin
-                if (q32 !== 32'h1 + (i-1)) 
-                    $error("Cycle %0d: q should be %h, but is %h", i, 32'h1 + (i-1), q32);
+                if (q32 != 32'h1 + i) 
+                    $error("Cycle %0d: q should be %h, but is %h", i+1, 32'h1 + i, q32);
             end
         end
         $display("Test N=32 done");

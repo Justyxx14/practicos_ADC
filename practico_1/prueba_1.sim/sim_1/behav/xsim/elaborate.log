@@ -5,18 +5,6 @@ Running: /media/justyxx/Julian/Vivado/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:38]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:44]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:50]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:56]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:62]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:68]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:76]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:82]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:88]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:94]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:100]
-WARNING: [VRFC 10-3597] non-void function 'prints' called as a task without void casting [/media/justyxx/Julian/Vivado/Projects/prueba_1/prueba_1.srcs/sim_1/new/execute_tb.sv:106]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

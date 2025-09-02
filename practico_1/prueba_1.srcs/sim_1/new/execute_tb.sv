@@ -13,7 +13,7 @@ module execute_tb;
                  .aluResult_E(aluResult_E), .writeData_E(writeData_E),
                  .zero_E(zero_E));
 
-    function automatic prints (input logic fail_sentence);
+    task automatic prints (input logic fail_sentence);
         
         if(fail_sentence)
             $display("Bad execute");
@@ -23,7 +23,7 @@ module execute_tb;
         $display("PC = %3h, aluRes = %2h, zero = %2h, writeData = %2h", 
                   PCBranch_E, aluResult_E, zero_E, writeData_E);
 
-    endfunction
+    endtask
 
     initial begin
         PC_E = 64'h100;

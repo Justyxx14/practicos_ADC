@@ -8,35 +8,31 @@ module alu(
     output logic zero
 );
 
-    function automatic logic set_zero_flag(input logic [63:0] result);
-        return (result == 0) ? 1 : 0;        
-    endfunction
-
     always_comb begin
         case (ALUControl)
             4'b0000: begin
                 result = a & b;
-                zero = set_zero_flag(result);
+                zero = (result == 0) ? 1 : 0;
             end
             4'b0001: begin
                 result = a | b;
-                zero = set_zero_flag(result);
+                zero = (result == 0) ? 1 : 0;
             end
             4'b0010: begin
                 result = a + b;
-                zero = set_zero_flag(result);
+                zero = (result == 0) ? 1 : 0;
             end
             4'b0110: begin
                 result = a - b;
-                zero = set_zero_flag(result);
+                zero = (result == 0) ? 1 : 0;
             end
             4'b0111: begin
                 result = b;
-                zero = set_zero_flag(result);
+                zero = (result == 0) ? 1 : 0;
             end
             default: begin
                 result = 64'h0;
-                zero = set_zero_flag(result);
+                zero = (result == 0) ? 1 : 0;
                 $display("unknown opcode");
             end
         endcase

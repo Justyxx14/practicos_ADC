@@ -20,14 +20,16 @@ module alu_tb;
             b = b_in;
             ALUControl = ALU_in;
             #1;
+            
             if(result != result_expected)
                 $error("result should be %h, but is %h", result_expected, result);
             else begin
                 $display("ALU correct:");
                 $display("a = %h, b = %h, op = %h, result_expected = %h -> result = %h", a, b, ALU_in, result_expected, result);
+            end
+            
             if(result == 0 && zero != 1)
                 $error("result = 0, but zero != 1");
-            end
         end
 
     endtask
@@ -74,10 +76,7 @@ module alu_tb;
         test_alu(64'h1, 64'h8000000000000001, 4'b0111, 64'h8000000000000001);
         $display("Test 18");
         test_alu(64'h1, 64'h8000000000000001, 4'b0011, 64'h0);
-    end
-
-    initial begin
-        #30;
+        
         $display("Test OVERFLOW");
         a = 64'h7FFFFFFFFFFFFFFF;
         b = 64'h0000000000000001;

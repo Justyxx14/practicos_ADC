@@ -1,7 +1,9 @@
 `timescale 1ns / 1ps
 
-module imem #(parameter int N = 32)
-             (input logic [5:0] addr, output logic [N-1:0] q);
+module imem #(parameter int N = 32)(
+    input logic [5:0] addr, 
+    output logic [N-1:0] q
+    );
 
     logic [N-1:0] ROM [0:63];
 
