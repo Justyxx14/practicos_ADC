@@ -34,30 +34,25 @@ module alu_E (
         case (aluCtrl)
             4'b0000: begin
                 res_alu = a & b;
-                zero = (res_alu == 0) ? 1 : 0;
             end
             4'b0001: begin
                 res_alu = a | b;
-                zero = (res_alu == 0) ? 1 : 0;
             end
             4'b0010: begin
                 res_alu = a + b;
-                zero = (res_alu == 0) ? 1 : 0;
             end
             4'b0110: begin
                 res_alu = a - b;
-                zero = (res_alu == 0) ? 1 : 0;
             end
             4'b0111: begin
                 res_alu = b;
-                zero = (res_alu == 0) ? 1 : 0;
             end
             default: begin
                 res_alu = 64'h0;
-                zero = (res_alu == 0) ? 1 : 0;
                 $display("unknown opcode");
             end
         endcase
+        zero = (res_alu == 0) ? 1 : 0;
     end   
 endmodule
 

@@ -79,7 +79,7 @@ module alu_tb;
         
         $display("Test OVERFLOW");
         a = 64'h7FFFFFFFFFFFFFFF;
-        b = 64'h0000000000000001;
+        b = 64'h0000000000000002;
         ALUControl = 4'b0010;
 
         $display("TEST OVERFLOW -> result = %h, zero = %h", result, zero);
