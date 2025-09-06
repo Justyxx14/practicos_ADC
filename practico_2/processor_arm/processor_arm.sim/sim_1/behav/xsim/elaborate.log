@@ -1,0 +1,44 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /media/justyxx/Julian/Vivado/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot processor_tb_behav xil_defaultlib.processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 64 for port 'd0' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:19]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 64 for port 'd1' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:20]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 64 for port 'y' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:22]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.aludec
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.flopr_F
+Compiling module xil_defaultlib.adder_F
+Compiling module xil_defaultlib.fetch
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.signext
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.sl2_E
+Compiling module xil_defaultlib.adder_E
+Compiling module xil_defaultlib.mux_E
+Compiling module xil_defaultlib.alu_E
+Compiling module xil_defaultlib.execute
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.writeback
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.imem
+Compiling architecture behave of entity xil_defaultlib.dmem [dmem_default]
+Compiling module xil_defaultlib.processor_arm
+Compiling module xil_defaultlib.processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot processor_tb_behav

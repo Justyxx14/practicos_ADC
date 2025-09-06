@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+Tiempo 0 -> Unknown Opcode: xxxxxxxxxxx
+Tiempo 3655000 -> Unknown Opcode: 0000
+Tiempo 4245000 -> Unknown Opcode: 0000
+Tiempo 4835000 -> Unknown Opcode: 0000
+Tiempo 5425000 -> Unknown Opcode: 0000
+Tiempo 6015000 -> Unknown Opcode: 0000
+Tiempo 6605000 -> Unknown Opcode: 0000
+Tiempo 7195000 -> Unknown Opcode: 0000
+Tiempo 7785000 -> Unknown Opcode: 0000
+Tiempo 8375000 -> Unknown Opcode: 0000
+Tiempo 8965000 -> Unknown Opcode: 0000
+Note: fin del testdump
+Time: 9520 ns  Iteration: 1  Process: /processor_tb/dut/dataMem/line__63  File: /media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/dmem.vhd
+$stop called at time : 9540 ns : File "/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/tb/processor_tb.sv" Line 34

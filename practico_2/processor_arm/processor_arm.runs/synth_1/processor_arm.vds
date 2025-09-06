@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Sep  3 13:03:40 2025
+# Process ID         : 12865
+# Current directory  : /media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.runs/synth_1
+# Command line       : vivado -log processor_arm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_arm.tcl
+# Log file           : /media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.runs/synth_1/processor_arm.vds
+# Journal file       : /media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.runs/synth_1/vivado.jou
+# Running On         : justyxx
+# Platform           : Linuxmint
+# Operating System   : Linux Mint 22.1
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+# CPU Frequency      : 4100.000 MHz
+# CPU Physical cores : 2
+# CPU Logical cores  : 4
+# Host memory        : 8059 MB
+# Swap memory        : 4095 MB
+# Total Virtual      : 12154 MB
+# Available Virtual  : 6578 MB
+#-----------------------------------------------------------
+source processor_arm.tcl -notrace
+Command: synth_design -top processor_arm -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1823.340 ; gain = 429.832 ; free physical = 157 ; free virtual = 5398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'processor_arm' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/processor_arm.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/controller.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/maindec.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/maindec.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/aludec.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/aludec.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/controller.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/datapath.sv:5]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:39]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux2' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'flopr_F' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'flopr_F' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'adder_F' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'adder_F' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:39]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:5]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:4]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:4]
+WARNING: [Synth 8-689] width (5) of port connection 'd0' does not match port width (64) of module 'mux2__parameterized0' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:13]
+WARNING: [Synth 8-689] width (5) of port connection 'd1' does not match port width (64) of module 'mux2__parameterized0' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:13]
+WARNING: [Synth 8-689] width (5) of port connection 'y' does not match port width (64) of module 'mux2__parameterized0' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/regfile.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/regfile.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'signext' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/signext.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/signext.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/decode.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:59]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sl2_E' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'sl2_E' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'adder_E' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'adder_E' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'mux_E' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'mux_E' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'alu_E' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'alu_E' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/execute.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/memory.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/memory.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'writeback' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/writeback.sv:3]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:4]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/fetch.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'writeback' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/writeback.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/datapath.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'imem' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/imem.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.srcs/sources_1/new/imem.sv:3]
+INFO: [Synth 8-638] synthesizing module 'dmem' [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/dmem.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/dmem.vhd:21]
+INFO: [Synth 8-6155] done synthesizing module 'processor_arm' (0#1) [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/src/processor_arm.sv:3]
+WARNING: [Synth 8-7129] Port dump in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[4] in module signext is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module signext is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module signext is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module signext is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module signext is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1896.309 ; gain = 502.801 ; free physical = 109 ; free virtual = 5328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1914.121 ; gain = 520.613 ; free physical = 109 ; free virtual = 5329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1914.121 ; gain = 520.613 ; free physical = 109 ; free virtual = 5329
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1914.121 ; gain = 0.000 ; free physical = 108 ; free virtual = 5328
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_a[0]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_a[1]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_a[2]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_a[3]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[0]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[1]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[2]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[3]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[4]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[5]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[6]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D0_seg[7]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_a[0]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_a[1]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_a[2]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_a[3]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[0]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[1]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[2]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[3]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[4]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[5]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[6]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_seg[7]'. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/constrs/boolean.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.871 ; gain = 0.000 ; free physical = 141 ; free virtual = 5345
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.871 ; gain = 0.000 ; free physical = 140 ; free virtual = 5345
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2046.871 ; gain = 653.363 ; free physical = 143 ; free virtual = 5319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2054.875 ; gain = 661.367 ; free physical = 143 ; free virtual = 5319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2054.875 ; gain = 661.367 ; free physical = 143 ; free virtual = 5319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2054.875 ; gain = 661.367 ; free physical = 138 ; free virtual = 5318
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 3     
+	   3 Input   64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit	(32 X 64 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 9     
+	  65 Input   32 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port dump in module dmem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2054.875 ; gain = 661.367 ; free physical = 132 ; free virtual = 5279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+----------------------------------+-----------+----------------------+----------------+
+|Module Name   | RTL Object                       | Inference | Size (Depth x Width) | Primitives     | 
++--------------+----------------------------------+-----------+----------------------+----------------+
+|processor_arm | dp/DECODE/registers/registry_reg | Implied   | 32 x 64              | RAM32M x 22    | 
+|processor_arm | dataMem/mem_reg                  | Implied   | 64 x 64              | RAM64X1S x 64  | 
++--------------+----------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2096.875 ; gain = 703.367 ; free physical = 123 ; free virtual = 5190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2097.875 ; gain = 704.367 ; free physical = 123 ; free virtual = 5190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------+----------------------------------+-----------+----------------------+----------------+
+|Module Name   | RTL Object                       | Inference | Size (Depth x Width) | Primitives     | 
++--------------+----------------------------------+-----------+----------------------+----------------+
+|processor_arm | dp/DECODE/registers/registry_reg | Implied   | 32 x 64              | RAM32M x 22    | 
+|processor_arm | dataMem/mem_reg                  | Implied   | 64 x 64              | RAM64X1S x 64  | 
++--------------+----------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2122.906 ; gain = 729.398 ; free physical = 159 ; free virtual = 5179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    36|
+|3     |LUT1     |     1|
+|4     |LUT2     |   133|
+|5     |LUT3     |    73|
+|6     |LUT4     |    98|
+|7     |LUT5     |    64|
+|8     |LUT6     |   238|
+|9     |MUXF7    |    13|
+|10    |RAM32M   |    22|
+|11    |RAM64X1S |    64|
+|12    |FDRE     |     6|
+|13    |IBUF     |     2|
+|14    |OBUF     |   129|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.719 ; gain = 874.211 ; free physical = 128 ; free virtual = 5063
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2267.719 ; gain = 741.461 ; free physical = 123 ; free virtual = 5061
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.727 ; gain = 874.211 ; free physical = 121 ; free virtual = 5060
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2267.727 ; gain = 0.000 ; free physical = 273 ; free virtual = 5216
+INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.730 ; gain = 0.000 ; free physical = 262 ; free virtual = 5205
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 86 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 64 instances
+
+Synth Design complete | Checksum: aa0f7d47
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 68 Warnings, 57 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 2291.730 ; gain = 931.879 ; free physical = 261 ; free virtual = 5204
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1657.417; main = 1657.417; forked = 313.188
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2979.523; main = 2291.734; forked = 924.645
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2315.742 ; gain = 0.000 ; free physical = 260 ; free virtual = 5203
+INFO: [Common 17-1381] The checkpoint '/media/justyxx/Julian/Vivado/Projects/lab1-adc2025-g01/processor_arm/processor_arm.runs/synth_1/processor_arm.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file processor_arm_utilization_synth.rpt -pb processor_arm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  3 13:04:18 2025...

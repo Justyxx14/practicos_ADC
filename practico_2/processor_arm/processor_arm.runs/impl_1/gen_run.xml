@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1756915478">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="processor_arm_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="processor_arm_routed.rqs"/>
+  <File Type="RBD_FILE" Name="processor_arm.rbd"/>
+  <File Type="NPI_FILE" Name="processor_arm.npi"/>
+  <File Type="RNPI_FILE" Name="processor_arm.rnpi"/>
+  <File Type="CFI_FILE" Name="processor_arm.cfi"/>
+  <File Type="RCFI_FILE" Name="processor_arm.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="processor_arm_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="processor_arm_boot.pdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="processor_arm_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="processor_arm_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="processor_arm_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="processor_arm_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="processor_arm_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="processor_arm_placed.dcp"/>
+  <File Type="OPT-DCP" Name="processor_arm_opt.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="processor_arm_timing_summary_routed.pb"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="processor_arm_routed_bb.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="processor_arm_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="processor_arm_routed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="processor_arm_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="processor_arm.hwdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="processor_arm.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="processor_arm.sysdef"/>
+  <File Type="BITSTR-MMI" Name="processor_arm.mmi"/>
+  <File Type="BITSTR-BMM" Name="processor_arm_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="processor_arm.nky"/>
+  <File Type="BITSTR-RBT" Name="processor_arm.rbt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="processor_arm.bit"/>
+  <File Type="PDI-FILE" Name="processor_arm.pdi"/>
+  <File Type="RDI-RDI" Name="processor_arm.vdi"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="processor_arm_timing_summary_routed.rpt"/>
+  <File Type="BG-BIN" Name="processor_arm.bin"/>
+  <File Type="PLACE-IO" Name="processor_arm_io_placed.rpt"/>
+  <File Type="OPT-DRC" Name="processor_arm_drc_opted.rpt"/>
+  <File Type="PLACE-CTRL" Name="processor_arm_control_sets_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="processor_arm_methodology_drc_routed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="processor_arm_utilization_placed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="processor_arm_timing_summary_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="processor_arm_reports.tcl"/>
+  <File Type="PA-TCL" Name="processor_arm.tcl"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="processor_arm_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="processor_arm.bgn"/>
+  <File Type="PLACE-UTIL" Name="processor_arm_utilization_placed.rpt"/>
+  <File Type="ROUTE-STATUS" Name="processor_arm_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="processor_arm_route_status.pb"/>
+  <File Type="BG-DRC" Name="processor_arm.drc"/>
+  <File Type="ROUTE-PWR" Name="processor_arm_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="processor_arm_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="processor_arm_power_summary_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="processor_arm_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="processor_arm_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="processor_arm_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="processor_arm_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="processor_arm_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="processor_arm_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="processor_arm_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="processor_arm_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="processor_arm_bus_skew_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="processor_arm.msk"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="processor_arm_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="processor_arm_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="processor_arm_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="processor_arm_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="processor_arm_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="processor_arm_bus_skew_postroute_physopted.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/src/aludec.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/controller.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/datapath.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/decode.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/execute.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fetch.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/imem.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/maindec.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/memory.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/regfile.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signext.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/writeback.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/dmem.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/src/processor_arm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flopr.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="processor_arm"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/constrs/boolean.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
